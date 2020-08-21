@@ -1,0 +1,30 @@
+{
+  "name": "log-reader",
+  "version": "1.0.0",
+  "description": "simple log reader transformer",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf logs.csv",
+    "start": "npm run clean && node -r esm .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danteay/log-reader.git"
+  },
+  "author": "dante.aguilar41@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danteay/log-reader/issues"
+  },
+  "homepage": "https://github.com/danteay/log-reader#readme",
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "esm": "^3.2.25",
+    "geoip-lite": "^1.4.2",
+    "node-device-detector": "^1.2.7",
+    "node-fetch": "^2.6.0",
+    "ora": "^5.0.0",
+    "worker-farm": "^1.7.0"
+  }
+}
